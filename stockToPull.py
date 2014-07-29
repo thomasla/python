@@ -1,6 +1,6 @@
 import urllib2
 import time
-
+# some comment
 stocksToPull = ('AAPL','GOOG','MSFT','CMG','EBAY','TSLA')
 
 def pullData(stock):
