@@ -1,0 +1,27 @@
+import matplotlib.pyplot as plt
+
+x=[]
+y=[]
+
+readFile = open('E:\\repository\\SampleData.txt','r')
+
+sepFile = readFile.read().split('\n')
+
+readFile.close()
+
+for plotPair in sepFile:
+    xAndy = plotPair.split(',')
+#    print xAndy
+    x.append((xAndy[0]))
+    y.append((xAndy[1]))
+
+print x
+print y
+
+plt.plot(x, y)
+
+plt.title('sample title')
+plt.xlabel('x label')
+plt.ylabel('y label')
+
+plt.show()
